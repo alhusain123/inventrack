@@ -1,4 +1,11 @@
 <?php
+
+$test = new mysqli('zephyr.proxy.rlwy.net', 'root', 'zJxjQnnaXONmHIcZiDYmChsMynbtCsjN', 'railway', 32725);
+if ($test->connect_error) {
+    die("DB FAILED: " . $test->connect_error);
+} else {
+    die("DB CONNECTED OK!");
+}
 // ============================================
 // login.php - User Login
 // ============================================
